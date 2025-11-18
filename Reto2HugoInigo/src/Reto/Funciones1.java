@@ -40,14 +40,14 @@ public class Funciones1 {
 		String menu = """ 
 				Elige la operacion:
 				1. De kg a libras
-				2. De km a millas
+				2. De libras a kg 
 				0. Volver
 				""";
 		System.out.println(menu);
 		int opcion = Funciones.dimeEntero("Opcion: ", sc);
 		switch (opcion) {
-		case 1 -> System.out.println("Resultado: "+MillasaKm(1.0));
-		case 2 -> System.out.println("Resultado: "+KmaMilla(2.4));
+		case 1 -> System.out.println("Resultado: "+KilogramosAlibras(1.0));
+		case 2 -> System.out.println("Resultado: "+LibrasaKilogramos(2.4));
 		case 3 -> Reto2.main(null);
 		default -> System.out.println("Opcion no valida"); 
 		}
