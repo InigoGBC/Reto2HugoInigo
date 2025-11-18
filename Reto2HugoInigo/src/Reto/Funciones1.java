@@ -29,8 +29,8 @@ public class Funciones1 {
 		System.out.println(menu);
 		int opcion = Funciones.dimeEntero("Opcion: ", sc);
 		switch (opcion) {
-		case 1 -> System.out.println("Resultado: "+MillasaKm(1.0));
-		case 2 -> System.out.println("Resultado: "+KmaMilla(2.4));
+		case 1 -> System.out.println("Resultado: "+MillasaKm(Funciones.dimeDouble("Cantidad: ", sc)));
+		case 2 -> System.out.println("Resultado: "+KmaMilla(Funciones.dimeDouble("Cantidad: ", sc)));
 		case 3 -> Reto2.main(null);
 		default -> System.out.println("Opcion no valida"); 
 		}
@@ -46,8 +46,8 @@ public class Funciones1 {
 		System.out.println(menu);
 		int opcion = Funciones.dimeEntero("Opcion: ", sc);
 		switch (opcion) {
-		case 1 -> System.out.println("Resultado: "+KilogramosAlibras(1.0));
-		case 2 -> System.out.println("Resultado: "+LibrasaKilogramos(2.4));
+		case 1 -> System.out.println("Resultado: "+KilogramosAlibras(Funciones.dimeDouble("Cantidad: ", sc)));
+		case 2 -> System.out.println("Resultado: "+LibrasaKilogramos(Funciones.dimeDouble("Cantidad: ", sc)));
 		case 3 -> Reto2.main(null);
 		default -> System.out.println("Opcion no valida"); 
 		}
