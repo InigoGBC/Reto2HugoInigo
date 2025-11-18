@@ -27,8 +27,26 @@ public class Funciones2 {
 		System.out.println(menu);
 		int opcion = Funciones.dimeEntero("Opcion: ", sc);
 		switch (opcion) {
-		case 1 -> System.out.println("Resultado: "+celsiusFarenheit(1.0));
-		case 2 -> System.out.println("Resultado: "+farenheitCelsius(2.4));
+		case 1 -> System.out.println("Resultado: "+celsiusFarenheit(Funciones.dimeDouble("Cantidad: ", sc)));
+		case 2 -> System.out.println("Resultado: "+farenheitCelsius(Funciones.dimeDouble("Cantidad: ", sc)));
+		case 3 -> Reto2.main(null);
+		default -> System.out.println("Opcion no valida"); 
+		}
+		return;
+		}
+	
+	public static void menuVolumen(Scanner sc) {
+		String menu = """ 
+				Elige la operacion:
+				1. De litros a galones
+				2. De galones a litros
+				0. Volver
+				""";
+		System.out.println(menu);
+		int opcion = Funciones.dimeEntero("Opcion: ", sc);
+		switch (opcion) {
+		case 1 -> System.out.println("Resultado: "+litrosgalones(Funciones.dimeDouble("Cantidad: ", sc)));
+		case 2 -> System.out.println("Resultado: "+galoneslitros(Funciones.dimeDouble("Cantidad: ", sc)));
 		case 3 -> Reto2.main(null);
 		default -> System.out.println("Opcion no valida"); 
 		}
