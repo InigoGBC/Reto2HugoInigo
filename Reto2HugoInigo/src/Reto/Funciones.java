@@ -29,7 +29,7 @@ public class Funciones {
 		do
 		{
 		try {
-			System.out.println(texto);
+			System.out.print(texto);
 			String s = sc.nextLine();
 			double d= Double.parseDouble(s);
 			return d;
