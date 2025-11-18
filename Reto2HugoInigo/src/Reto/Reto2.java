@@ -20,15 +20,12 @@ public class Reto2 {
 		System.out.println(menu);
 		opcion = Funciones.dimeEntero("Opcion: ", sc);
 			switch (opcion) {
-			case 1 -> System.out.println("Resultado: "+Funciones2.menuTemperatura(sc));
+			case 1 -> Funciones2.menuTemperatura(sc);
 			default -> System.out.println("Opcion no valida"); 
 			}
 		} while (opcion!=0);
 				
 				
-		
-		
-		
 		
 
 	}
